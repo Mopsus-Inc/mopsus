@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
+	Halcyonic by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -8,229 +8,273 @@
 	<head>
 		<title>Mopsus</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="is-loading">
+	<body>
+		<div id="page-wrapper">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+						<div class="row">
+							<div class="12u">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Mopsus</h1>
-						<p>Reinventing security</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+								<!-- Logo -->
+									<h1><a href="#" id="logo">Mopsus</a></h1>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Mopsus</a>
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Home</a>
+										<a href="stats.html">The stats</a>
+										<a href="service.html">Our service</a>
+										<a href="contact.html">Contact us</a>
+									</nav>
+
+							</div>
+						</div>
 					</header>
+					<div id="banner">
+						<div class="container">
+							<div class="row">
+								<div class="6u 12u(mobile)">
 
-				<!-- Nav -->
-					<!-- <nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Mopsus</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav> -->
+									<!-- Banner Copy -->
+										<p>4,000 small businesses will suffer a cyberattack today.</p>
+										<a href="#" class="button-big">How can I protect myself?</a>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Staying safe is hard.</h2>
-									<p>Staying secure means more money, more staff, and more work. Thousands of companies every year
-									have their data breached because they can't afford to pay these costs. We want to make security
-									available and easy for everone.</p>
-									<h3>The old way</h3>
-									Before, developers were faced with a choice. Storing their data quickly meant one line of code, but left them vulnerable.
-									<div style="border-radius: 50px; background-color: #EEE; font-family: monospace; color: #555;">query = "SELECT * FROM users WHERE username='%s' AND password='%s'" % (uid, passwd).</div>
-									Being safe meant dozens, if not hundreds.
-									<div style="background-color: #EEE; border-radius: 50px;">
-										<div style="font-family: monospace; color: #999;">app.config['DEBUG'] = True</div>
-										<div style="font-family: monospace; color: #AAA;">app.config['SECRET_KEY'] = 'super-secret'</div>
-										<div style="font-family: monospace; color: #BBB;">app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://'</div>
-										<div style="font-family: monospace; color: #CCC;">db = SQLAlchemy(app)</div>
-										<div style="font-family: monospace; color: #DDD;">roles_users = db.Table('roles_users',</div>
-										<div style="font-family: monospace; color: #EEE;">db.Column('user_id', db.Integer(), db.ForeignKey('user.id')))</div>
-									</div>
-									<h3>The Mopsus way</h3>
-									We do what other libraries do in a fraction of the code, and with security built-in from the start.
-									<div style="border-radius: 50px; background-color: #EEE; font-family: monospace; color: #555;">db.select(user=uid, password=pwd)</div>
-									It's simple. It's secure. It's mopsus.
-								</header>
-								<ul class="actions">
-									<li><a href="https://goo.gl/forms/c7OqtRBaHTjpK5DV2" class="button big">I'm interested in updates</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<!--<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>-->
-
-						<!-- Footer -->
-							<!--<footer>
-								<div class="pagination">
-									<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
 								</div>
-							</footer>
+								<div class="6u 12u(mobile)">
 
-					</div>-->
+									<!-- Banner Image -->
+										<a href="#" class="bordered-feature-image"><img src="images/banner.jpg" alt="" /></a>
 
-				<!-- Footer -->
-					<!--<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
 								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="3"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>-->
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+							</div>
+						</div>
 					</div>
+				</div>
 
-			</div>
+			<!-- Features -->
+				<div id="features-wrapper">
+					<div id="features">
+						<div class="container">
+							<div class="row">
+								<div class="3u 12u(mobile)">
+
+									<!-- Feature #1 -->
+										<section>
+											<a href="#" class="bordered-feature-image"><img src="images/pic01.jpg" alt="" /></a>
+											<h2>Welcome to Halcyonic</h2>
+											<p>
+												This is <strong>Halcyonic</strong>, a free site template
+												by <a href="http://twitter.com/ajlkn">AJ</a> for
+												<a href="http://html5up.net">HTML5 UP</a>. It's responsive,
+												built on HTML5 + CSS3, and includes 5 unique page layouts.
+											</p>
+										</section>
+
+								</div>
+								<div class="3u 12u(mobile)">
+
+									<!-- Feature #2 -->
+										<section>
+											<a href="#" class="bordered-feature-image"><img src="images/pic02.jpg" alt="" /></a>
+											<h2>Responsive You Say?</h2>
+											<p>
+												Yes! Halcyonic is built on the <a href="http://getskel.com">Skel</a>
+												framework, so it has full responsive support for desktop, tablet,
+												and mobile device displays.
+											</p>
+										</section>
+
+								</div>
+								<div class="3u 12u(mobile)">
+
+									<!-- Feature #3 -->
+										<section>
+											<a href="#" class="bordered-feature-image"><img src="images/pic03.jpg" alt="" /></a>
+											<h2>License Info</h2>
+											<p>
+												Halcyonic is licensed under the <a href="http://html5up.net/license">CCA 3.0</a> license,
+												so use it for personal or commercial use as much as you like (just keep
+												the footer credit intact).
+											</p>
+										</section>
+
+								</div>
+								<div class="3u 12u(mobile)">
+
+									<!-- Feature #4 -->
+										<section>
+											<a href="#" class="bordered-feature-image"><img src="images/pic04.jpg" alt="" /></a>
+											<h2>Volutpat etiam aliquam</h2>
+											<p>
+												Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse
+												eu varius nibh. Suspendisse vitae magna eget odio amet mollis.
+											</p>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Content -->
+				<div id="content-wrapper">
+					<div id="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u(mobile)">
+
+									<!-- Box #1 -->
+										<section>
+											<header>
+												<h2>Who We Are</h2>
+												<h3>A subheading about who we are</h3>
+											</header>
+											<a href="#" class="feature-image"><img src="images/pic05.jpg" alt="" /></a>
+											<p>
+												Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed.
+												Suspendisse eu varius nibh. Suspendisse vitae magna eget odio amet mollis
+												justo facilisis quis. Sed sagittis mauris amet tellus gravida lorem ipsum.
+											</p>
+										</section>
+
+								</div>
+								<div class="4u 12u(mobile)">
+
+									<!-- Box #2 -->
+										<section>
+											<header>
+												<h2>What We Do</h2>
+												<h3>A subheading about what we do</h3>
+											</header>
+											<ul class="check-list">
+												<li>Sed mattis quis rutrum accum</li>
+												<li>Eu varius nibh suspendisse lorem</li>
+												<li>Magna eget odio amet mollis justo</li>
+												<li>Facilisis quis sagittis mauris</li>
+												<li>Amet tellus gravida lorem ipsum</li>
+											</ul>
+										</section>
+
+								</div>
+								<div class="4u 12u(mobile)">
+
+									<!-- Box #3 -->
+										<section>
+											<header>
+												<h2>What People Are Saying</h2>
+												<h3>And a final subheading about our clients</h3>
+											</header>
+											<ul class="quote-list">
+												<li>
+													<img src="images/pic06.jpg" alt="" />
+													<p>"Neque nisidapibus mattis"</p>
+													<span>Jane Doe, CEO of UntitledCorp</span>
+												</li>
+												<li>
+													<img src="images/pic07.jpg" alt="" />
+													<p>"Lorem ipsum consequat!"</p>
+													<span>John Doe, President of FakeBiz</span>
+												</li>
+												<li>
+													<img src="images/pic08.jpg" alt="" />
+													<p>"Magna veroeros amet tempus"</p>
+													<span>Mary Smith, CFO of UntitledBiz</span>
+												</li>
+											</ul>
+										</section>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="8u 12u(mobile)">
+
+								<!-- Links -->
+									<section>
+										<h2>Links to Important Stuff</h2>
+										<div>
+											<div class="row">
+												<div class="3u 12u(mobile)">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="3u 12u(mobile)">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="3u 12u(mobile)">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="3u 12u(mobile)">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+							<div class="4u 12u(mobile)">
+
+								<!-- Blurb -->
+									<section>
+										<h2>An Informative Text Blurb</h2>
+										<p>
+											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
+											varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
+											dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
+											lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+										</p>
+									</section>
+
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
 	</body>
